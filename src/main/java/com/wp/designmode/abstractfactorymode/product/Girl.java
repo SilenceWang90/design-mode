@@ -1,4 +1,4 @@
-package com.wp.designmode.abstractfactorymode;
+package com.wp.designmode.abstractfactorymode.product;
 
 /**
  * @Classname Girl

@@ -1,7 +1,7 @@
 package com.wp.designmode.abstractfactorymode.factory;
 
-import com.wp.designmode.abstractfactorymode.Boy;
-import com.wp.designmode.abstractfactorymode.Girl;
+import com.wp.designmode.abstractfactorymode.product.Boy;
+import com.wp.designmode.abstractfactorymode.product.Girl;
 
 /**
  * @Classname PersonFactory

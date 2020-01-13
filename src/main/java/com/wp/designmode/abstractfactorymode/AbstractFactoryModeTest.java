@@ -1,8 +1,10 @@
 package com.wp.designmode.abstractfactorymode;
 
-import com.wp.designmode.abstractfactorymode.factory.HNFactory;
-import com.wp.designmode.abstractfactorymode.factory.MCFactory;
+import com.wp.designmode.abstractfactorymode.factory.impl.HNFactory;
+import com.wp.designmode.abstractfactorymode.factory.impl.MCFactory;
 import com.wp.designmode.abstractfactorymode.factory.PersonFactory;
+import com.wp.designmode.abstractfactorymode.product.Boy;
+import com.wp.designmode.abstractfactorymode.product.Girl;
 
 /**
  * @Classname AbstractFactoryModeTest
