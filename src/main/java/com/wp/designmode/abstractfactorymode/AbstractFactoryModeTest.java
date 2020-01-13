@@ -1,8 +1,9 @@
 package com.wp.designmode.abstractfactorymode;
 
+import com.wp.designmode.abstractfactorymode.factory.FactoryBuilder;
+import com.wp.designmode.abstractfactorymode.factory.PersonFactory;
 import com.wp.designmode.abstractfactorymode.factory.impl.HNFactory;
 import com.wp.designmode.abstractfactorymode.factory.impl.MCFactory;
-import com.wp.designmode.abstractfactorymode.factory.PersonFactory;
 import com.wp.designmode.abstractfactorymode.product.Boy;
 import com.wp.designmode.abstractfactorymode.product.Girl;
 
@@ -14,12 +15,15 @@ import com.wp.designmode.abstractfactorymode.product.Girl;
  */
 public class AbstractFactoryModeTest {
     public static void main(String[] args) {
-        PersonFactory mcPersonFactory = new MCFactory();
-        Girl girl = mcPersonFactory.buildGirl();
-        girl.drawWoman();
-
-        PersonFactory hnPersonFactory = new HNFactory();
-        Boy boy = hnPersonFactory.buildBoy();
-        boy.drawMan();
+        //创建圣诞工厂
+        PersonFactory mcPersonFactory = FactoryBuilder.build(MCFactory.class);
+        //创建新年工厂
+        PersonFactory hnPersonFactory = FactoryBuilder.build(HNFactory.class);
+        //创建圣诞男孩儿
+        Boy mcBoy = mcPersonFactory.buildBoy();
+        mcBoy.drawMan();
+        //创建新年女孩儿
+        Girl hnGirl = hnPersonFactory.buildGirl();
+        hnGirl.drawWoman();
     }
 }
