@@ -1,5 +1,8 @@
-package com.wp.designmode.factorymode;
+package com.wp.designmode.factorymode.factory;
 
+import com.wp.designmode.factorymode.hair.HairInterface;
+import com.wp.designmode.factorymode.hair.impl.LeftHair;
+import com.wp.designmode.factorymode.hair.impl.RightHair;
 import lombok.extern.slf4j.Slf4j;
 
 /**

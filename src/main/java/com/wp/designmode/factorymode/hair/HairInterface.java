@@ -1,4 +1,4 @@
-package com.wp.designmode.factorymode;
+package com.wp.designmode.factorymode.hair;
 
 /**
  * @Classname HairInterface
