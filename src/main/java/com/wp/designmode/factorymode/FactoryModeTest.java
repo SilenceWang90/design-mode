@@ -8,7 +8,7 @@ import lombok.extern.slf4j.Slf4j;
 
 /**
  * @Classname FactoryModeTest
- * @Description 测试
+ * @Description 工厂模式测试
  * @Date 2020/1/13 18:53
  * @Created by wangpeng116
  */
