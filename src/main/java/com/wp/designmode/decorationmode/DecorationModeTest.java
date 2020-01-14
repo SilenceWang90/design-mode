@@ -1,12 +1,12 @@
-package com.wp.designmode.decorationmode.simple;
+package com.wp.designmode.decorationmode;
 
-import com.wp.designmode.decorationmode.simple.decoration.impl.Egg;
-import com.wp.designmode.decorationmode.simple.decoration.impl.RedBean;
-import com.wp.designmode.decorationmode.simple.decoration.impl.Sugar;
-import com.wp.designmode.decorationmode.simple.decoration.impl.WaterMelon;
-import com.wp.designmode.decorationmode.simple.product.Drink;
-import com.wp.designmode.decorationmode.simple.product.impl.Juice;
-import com.wp.designmode.decorationmode.simple.product.impl.Soya;
+import com.wp.designmode.decorationmode.decoration.impl.Egg;
+import com.wp.designmode.decorationmode.decoration.impl.RedBean;
+import com.wp.designmode.decorationmode.decoration.impl.Sugar;
+import com.wp.designmode.decorationmode.decoration.impl.WaterMelon;
+import com.wp.designmode.decorationmode.product.Drink;
+import com.wp.designmode.decorationmode.product.impl.Juice;
+import com.wp.designmode.decorationmode.product.impl.Soya;
 import lombok.extern.slf4j.Slf4j;
 
 /**

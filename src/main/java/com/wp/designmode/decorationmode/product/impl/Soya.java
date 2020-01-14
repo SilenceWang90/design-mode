@@ -1,6 +1,6 @@
-package com.wp.designmode.decorationmode.simple.product.impl;
+package com.wp.designmode.decorationmode.product.impl;
 
-import com.wp.designmode.decorationmode.simple.product.Drink;
+import com.wp.designmode.decorationmode.product.Drink;
 import lombok.extern.slf4j.Slf4j;
 
 import java.math.BigDecimal;

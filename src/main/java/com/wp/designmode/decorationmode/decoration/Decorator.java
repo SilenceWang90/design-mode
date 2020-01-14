@@ -1,6 +1,6 @@
-package com.wp.designmode.decorationmode.simple.decoration;
+package com.wp.designmode.decorationmode.decoration;
 
-import com.wp.designmode.decorationmode.simple.product.Drink;
+import com.wp.designmode.decorationmode.product.Drink;
 
 import java.math.BigDecimal;
 
