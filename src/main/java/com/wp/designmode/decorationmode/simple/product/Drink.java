@@ -1,4 +1,4 @@
-package com.wp.designmode.decorationmode.product;
+package com.wp.designmode.decorationmode.simple.product;
 
 import java.math.BigDecimal;
 
