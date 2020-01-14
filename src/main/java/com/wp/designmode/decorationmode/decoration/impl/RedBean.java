@@ -23,7 +23,7 @@ public class RedBean extends Decorator {
      */
     @Override
     public BigDecimal money() {
-        return super.money().add(new BigDecimal(3.2));
+        return super.money().add(new BigDecimal("3.2"));
     }
 
     /**
