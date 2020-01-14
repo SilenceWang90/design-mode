@@ -1,13 +1,14 @@
 package com.wp.designmode.decorationmode;
 
 import com.wp.designmode.decorationmode.decoration.impl.Egg;
+import com.wp.designmode.decorationmode.decoration.impl.RedBean;
 import com.wp.designmode.decorationmode.decoration.impl.Sugar;
 import com.wp.designmode.decorationmode.decoration.impl.WaterMelon;
 import com.wp.designmode.decorationmode.product.Drink;
+import com.wp.designmode.decorationmode.product.impl.Juice;
 import com.wp.designmode.decorationmode.product.impl.Soya;
 import lombok.extern.slf4j.Slf4j;
 
-import com.wp.designmode.decorationmode.decoration.impl.RedBean;
 /**
  * @Description 装饰者模式测试
  * @Date 2020/1/14 14:58
@@ -17,6 +18,7 @@ import com.wp.designmode.decorationmode.decoration.impl.RedBean;
 @Slf4j
 public class DecorationModeTest {
     public static void main(String[] args) {
+        /**搭配豆浆，首先就是先有豆浆*/
         //纯豆浆
         Drink soya = new Soya();
         log.info("纯豆浆价格：{}", soya.money());
@@ -37,6 +39,14 @@ public class DecorationModeTest {
         Drink soyaAndWaterMelon = new WaterMelon(soya);
         log.info("纯豆浆+西瓜价格：{}", soyaAndWaterMelon.money());
         log.info("纯豆浆+西瓜描述：{}", soyaAndWaterMelon.desc());
-
+        System.out.println("-------------------------------------------------------------------------------------------");
+        /**搭配果汁，首先就是先有果汁*/
+        Drink juice = new Juice();
+        log.info("果汁价格：{}", juice.money());
+        log.info("果汁描述：{}", juice.desc());
+        //果汁+鸡蛋
+        Drink juiceAndEgg = new Egg(juice);
+        log.info("果汁+鸡蛋价格：{}", juiceAndEgg.money());
+        log.info("果汁+鸡蛋描述：{}", juiceAndEgg.desc());
     }
 }
