@@ -1,6 +1,5 @@
 package com.wp.designmode.strategymode.product.impl;
 
-import com.wp.designmode.strategymode.behaviour.FlyingStragety;
 import com.wp.designmode.strategymode.behaviour.impl.FlyingNoway;
 import com.wp.designmode.strategymode.product.Duck;
 import lombok.extern.slf4j.Slf4j;
