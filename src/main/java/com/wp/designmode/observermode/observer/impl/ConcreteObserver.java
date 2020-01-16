@@ -22,6 +22,6 @@ public class ConcreteObserver implements Observer {
      */
     @Override
     public void update(Subject subject) {
-        observerState = ((ConcreteSubject) subject).getSubjectState();
+        this.observerState = ((ConcreteSubject) subject).getSubjectState();
     }
 }
