@@ -3,6 +3,7 @@ package com.wp.designmode.observermode.observer.impl;
 import com.wp.designmode.observermode.observer.Observer;
 import com.wp.designmode.observermode.subject.Subject;
 import com.wp.designmode.observermode.subject.impl.ConcreteSubject;
+import lombok.Data;
 
 /**
  * @Classname ConcreteObserver
@@ -10,6 +11,7 @@ import com.wp.designmode.observermode.subject.impl.ConcreteSubject;
  * @Date 2020/1/16 20:07
  * @Created by wangpeng116
  */
+@Data
 public class ConcreteObserver implements Observer {
 
     //观察者的状态
