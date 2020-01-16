@@ -1,6 +1,5 @@
 package com.wp.designmode.strategymode;
 
-import com.wp.designmode.strategymode.behaviour.impl.FlyingWithWings;
 import com.wp.designmode.strategymode.product.Duck;
 import com.wp.designmode.strategymode.product.impl.MallardDuck;
 import com.wp.designmode.strategymode.product.impl.RedheadDuck;
@@ -17,12 +16,6 @@ public class StrategyModeTest {
         Duck mallardDuck = new MallardDuck();
         Duck redheadDuck = new RedheadDuck();
         Duck rubberDuck = new RubberDuck();
-        mallardDuck.fly();
-        redheadDuck.fly();
-        rubberDuck.fly();
-        System.out.println("------------------------------------------------------------------");
-        //注入飞行策略
-        mallardDuck.setFlyingStragety(new FlyingWithWings());
         mallardDuck.fly();
         redheadDuck.fly();
         rubberDuck.fly();

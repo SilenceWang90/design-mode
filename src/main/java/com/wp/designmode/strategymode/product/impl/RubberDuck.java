@@ -26,7 +26,6 @@ public class RubberDuck extends Duck {
     @Override
     public void display() {
         log.info("我全身发黄，嘴巴很红");
-
     }
 
 }
