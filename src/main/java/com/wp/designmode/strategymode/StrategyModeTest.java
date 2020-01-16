@@ -17,8 +17,10 @@ public class StrategyModeTest {
         Duck mallardDuck = new MallardDuck();
         Duck redheadDuck = new RedheadDuck();
         Duck rubberDuck = new RubberDuck();
-        redheadDuck.display();
-        redheadDuck.quack();
+        mallardDuck.fly();
+        redheadDuck.fly();
+        rubberDuck.fly();
+        System.out.println("------------------------------------------------------------------");
         //注入飞行策略
         mallardDuck.setFlyingStragety(new FlyingWithWings());
         mallardDuck.fly();
