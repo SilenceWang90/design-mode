@@ -1,5 +1,8 @@
 package com.wp.designmode.observermode;
 
+import com.wp.designmode.observermode.weather.observer.impl.ConcreteObserver;
+import com.wp.designmode.observermode.weather.subject.impl.ConcreteWeatherSubject;
+
 /**
  * @Classname ObserverModeTest
  * @Description 观察者模式测试
@@ -8,6 +11,20 @@ package com.wp.designmode.observermode;
  */
 public class ObserverModeTest {
     public static void main(String[] args) {
+        //1、创建目标
+        ConcreteWeatherSubject weatherSubject = new ConcreteWeatherSubject();
+        //2、创建观察者
+        ConcreteObserver observerGirl = new ConcreteObserver();
+        observerGirl.setObserverName("媳妇");
+        observerGirl.setRemindThing("第一次约会地点西单见");
 
+        ConcreteObserver observerMom = new ConcreteObserver();
+        observerMom.setObserverName("妈妈");
+        observerMom.setRemindThing("天气好要爬山");
+        //3、注册观察者
+        weatherSubject.attachObserver(observerGirl);
+        weatherSubject.attachObserver(observerMom);
+        //4、目标发布天气
+        weatherSubject.setWeatherContent("明天天气晴朗，蓝天白云");
     }
 }
