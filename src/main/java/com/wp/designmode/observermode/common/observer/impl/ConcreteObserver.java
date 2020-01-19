@@ -1,8 +1,8 @@
-package com.wp.designmode.observermode.observer.impl;
+package com.wp.designmode.observermode.common.observer.impl;
 
-import com.wp.designmode.observermode.observer.Observer;
-import com.wp.designmode.observermode.subject.Subject;
-import com.wp.designmode.observermode.subject.impl.ConcreteSubject;
+import com.wp.designmode.observermode.common.observer.Observer;
+import com.wp.designmode.observermode.common.subject.Subject;
+import com.wp.designmode.observermode.common.subject.impl.ConcreteSubject;
 import lombok.Data;
 
 /**

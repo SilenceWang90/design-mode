@@ -1,6 +1,6 @@
-package com.wp.designmode.observermode.subject;
+package com.wp.designmode.observermode.common.subject;
 
-import com.wp.designmode.observermode.observer.Observer;
+import com.wp.designmode.observermode.common.observer.Observer;
 
 import java.util.ArrayList;
 import java.util.List;

@@ -1,6 +1,6 @@
-package com.wp.designmode.observermode.observer;
+package com.wp.designmode.observermode.common.observer;
 
-import com.wp.designmode.observermode.subject.Subject;
+import com.wp.designmode.observermode.common.subject.Subject;
 
 /**
  * @Classname Observer

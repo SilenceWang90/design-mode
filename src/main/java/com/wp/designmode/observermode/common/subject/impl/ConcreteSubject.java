@@ -1,6 +1,6 @@
-package com.wp.designmode.observermode.subject.impl;
+package com.wp.designmode.observermode.common.subject.impl;
 
-import com.wp.designmode.observermode.subject.Subject;
+import com.wp.designmode.observermode.common.subject.Subject;
 
 /**
  * @Classname ConcreteSubject
