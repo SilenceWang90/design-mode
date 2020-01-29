@@ -14,10 +14,11 @@ public class ObserverModeTest {
         //1、创建目标
         ConcreteWeatherSubject weatherSubject = new ConcreteWeatherSubject();
         //2、创建观察者
+        //2.1、观察者1
         ConcreteObserver observerGirl = new ConcreteObserver();
         observerGirl.setObserverName("媳妇");
         observerGirl.setRemindThing("第一次约会地点西单见");
-
+        //2.2、观察者2
         ConcreteObserver observerMom = new ConcreteObserver();
         observerMom.setObserverName("妈妈");
         observerMom.setRemindThing("天气好要爬山");
