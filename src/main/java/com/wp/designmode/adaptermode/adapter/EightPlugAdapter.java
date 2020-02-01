@@ -16,6 +16,6 @@ public class EightPlugAdapter extends GBEightPlug
     @Override
     public void powerWithThree() {
         log.info("通过继承方式进行八相插口转换");
-        this.powerWithFive();
+        this.powerWithEight();
     }
 }

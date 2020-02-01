@@ -10,7 +10,7 @@ import lombok.extern.slf4j.Slf4j;
  */
 @Slf4j
 public class GBEightPlug {
-    public void powerWithFive() {
+    public void powerWithEight() {
         log.info("使用八相电流供电");
     }
 }
