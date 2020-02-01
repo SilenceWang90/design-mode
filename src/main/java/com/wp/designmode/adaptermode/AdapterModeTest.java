@@ -1,8 +1,10 @@
 package com.wp.designmode.adaptermode;
 
+import com.wp.designmode.adaptermode.adapter.EightPlugAdapter;
 import com.wp.designmode.adaptermode.adapter.FivePlugAdapter;
 import com.wp.designmode.adaptermode.adapter.TwoPlugAdapter;
 import com.wp.designmode.adaptermode.pluginterface.ThreePlugIf;
+import com.wp.designmode.adaptermode.plugs.GBEightPlug;
 import com.wp.designmode.adaptermode.plugs.GBFivePlug;
 import com.wp.designmode.adaptermode.plugs.GBTwoPlug;
 import com.wp.designmode.adaptermode.product.NoteBook;
@@ -33,5 +35,11 @@ public class AdapterModeTest {
         NoteBook noteBook2 = new NoteBook(threePlugFive);
         noteBook1.charge();
         noteBook2.charge();
+
+
+        /**优化测试**/
+        ThreePlugIf threePlugIf = new EightPlugAdapter();
+        NoteBook noteBook = new NoteBook(threePlugIf);
+        noteBook.charge();
     }
 }
