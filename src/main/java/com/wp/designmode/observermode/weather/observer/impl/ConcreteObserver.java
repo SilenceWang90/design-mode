@@ -8,7 +8,7 @@ import lombok.extern.slf4j.Slf4j;
 
 /**
  * @Classname ConcreteObserver
- * @Description TODO
+ * @Description 具体观察者对象
  * @Date 2020/1/19 19:54
  * @Created by wangpeng116
  */

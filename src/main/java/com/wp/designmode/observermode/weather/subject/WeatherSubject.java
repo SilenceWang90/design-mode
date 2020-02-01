@@ -8,7 +8,7 @@ import java.util.List;
 
 /**
  * @Classname WeatherSubject
- * @Description TODO
+ * @Description 目标对象
  * @Date 2020/1/19 19:53
  * @Created by wangpeng116
  */

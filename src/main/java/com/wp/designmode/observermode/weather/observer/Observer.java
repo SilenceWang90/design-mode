@@ -4,7 +4,7 @@ import com.wp.designmode.observermode.weather.subject.WeatherSubject;
 
 /**
  * @Classname Observer
- * @Description TODO
+ * @Description 观察者接口
  * @Date 2020/1/19 19:54
  * @Created by wangpeng116
  */
