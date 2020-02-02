@@ -17,13 +17,14 @@ public class PriceHandlerFactory {
      * @return
      */
     public static PriceHandler createPriceHandler() {
+        /**创建所有handler的实现**/
         PriceHandler sales = new Sales();
         PriceHandler lead = new Lead();
         PriceHandler manager = new Manager();
         PriceHandler director = new Director();
         PriceHandler vp = new VicePresident();
         PriceHandler ceo = new CEO();
-
+        /**创建责任链**/
         sales.setSuccessor(lead);
         lead.setSuccessor(manager);
         manager.setSuccessor(director);
