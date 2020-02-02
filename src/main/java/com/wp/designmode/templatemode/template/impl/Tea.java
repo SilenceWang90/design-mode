@@ -20,4 +20,13 @@ public class Tea extends RefreshBeverage {
     protected void addContiments() {
         log.info("加入柠檬");
     }
+
+    /**
+     * 子类通过重写的形式选择挂载钩子函数
+     * @return
+     */
+    @Override
+    protected boolean isCustomerWantsCondiments() {
+        return false;
+    }
 }

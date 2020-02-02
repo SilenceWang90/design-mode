@@ -26,7 +26,18 @@ public abstract class RefreshBeverage {
         /**步骤3：将饮料倒入杯中**/
         pourInCup();
         /**步骤4：加入调味料**/
-        addContiments();
+        if(isCustomerWantsCondiments()){
+            addContiments();
+        }
+    }
+
+    /**
+     * 钩子方法，子类可以选择
+     * 一般提供一个默认实现
+     * @return
+     */
+    protected boolean isCustomerWantsCondiments() {
+        return true;
     }
 
     /**
