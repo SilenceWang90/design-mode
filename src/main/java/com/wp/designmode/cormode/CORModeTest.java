@@ -1,6 +1,7 @@
 package com.wp.designmode.cormode;
 
 import com.wp.designmode.cormode.client.Customer;
+import com.wp.designmode.cormode.factory.PriceHandlerFactory;
 import com.wp.designmode.cormode.handler.PriceHandler;
 import lombok.extern.slf4j.Slf4j;
 
@@ -16,7 +17,7 @@ import java.util.Random;
 public class CORModeTest {
     public static void main(String[] args) {
         Customer customer = new Customer();
-        customer.setPriceHandler(PriceHandler.createPriceHandler());
+        customer.setPriceHandler(PriceHandlerFactory.createPriceHandler());
         Random random = new Random();
         for (int i = 1; i <= 10; i++) {
             log.info("{}：", i);
