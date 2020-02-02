@@ -23,7 +23,5 @@ public class TemplateModeTest {
         RefreshBeverage tea = new Tea();
         tea.prepareBeverageTemplate();
         log.info("finish制备茶");
-
-
     }
 }
