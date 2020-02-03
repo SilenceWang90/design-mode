@@ -1,5 +1,7 @@
 package com.wp.designmode.proxymode.dynamic;
 
+import com.wp.designmode.proxymode.dynamic.cglibdynamic.CglibProxy;
+import com.wp.designmode.proxymode.dynamic.cglibdynamic.Train;
 import com.wp.designmode.proxymode.dynamic.jdkdynamic.TimeHandler;
 import com.wp.designmode.proxymode.staticmode.Movable;
 import com.wp.designmode.proxymode.staticmode.impl.Car;
@@ -28,6 +30,10 @@ public class DynamicModeTest {
          */
         Movable movable = (Movable) Proxy.newProxyInstance(carClazz.getClassLoader(), carClazz.getInterfaces(), invocationHandler);
         movable.move();
+        System.out.println("--------------------------------");
         /**CGLIB动态代理**/
+        CglibProxy cglibProxy = new CglibProxy();
+        Train train = (Train) cglibProxy.getProxy(Train.class);
+        train.move();
     }
 }
