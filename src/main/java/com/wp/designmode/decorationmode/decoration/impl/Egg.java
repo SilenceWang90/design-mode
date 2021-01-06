@@ -23,7 +23,7 @@ public class Egg extends Decorator {
      */
     @Override
     public BigDecimal money() {
-        return super.money().add(new BigDecimal("3.9"));
+        return drink.money().add(new BigDecimal("3.9"));
     }
 
     /**
@@ -33,6 +33,6 @@ public class Egg extends Decorator {
      */
     @Override
     public String desc() {
-        return super.desc() + "+鸡蛋";
+        return drink.desc() + "+鸡蛋";
     }
 }

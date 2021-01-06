@@ -24,7 +24,7 @@ public class Sugar extends Decorator {
      */
     @Override
     public BigDecimal money() {
-        return super.money().add(new BigDecimal("2.1"));
+        return drink.money().add(new BigDecimal("2.1"));
     }
 
     /**
@@ -34,6 +34,6 @@ public class Sugar extends Decorator {
      */
     @Override
     public String desc() {
-        return super.desc() + "+糖";
+        return drink.desc() + "+糖";
     }
 }

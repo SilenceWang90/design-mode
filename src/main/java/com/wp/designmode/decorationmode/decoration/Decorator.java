@@ -11,7 +11,8 @@ import java.math.BigDecimal;
  * @Created by wangpeng116
  */
 public abstract class Decorator implements Drink {
-    private Drink drink;
+    //用于子类继承，装饰器就是对被装饰者进行装饰
+    protected Drink drink;
 
     /**
      * 通过构造函数传入产品类型的引用

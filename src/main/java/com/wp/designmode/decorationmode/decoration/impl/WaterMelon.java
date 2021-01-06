@@ -18,11 +18,11 @@ public class WaterMelon extends Decorator {
 
     @Override
     public BigDecimal money() {
-        return super.money().add(new BigDecimal("4"));
+        return drink.money().add(new BigDecimal("4"));
     }
 
     @Override
     public String desc() {
-        return super.desc() + "+西瓜";
+        return drink.desc() + "+西瓜";
     }
 }
