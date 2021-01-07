@@ -13,7 +13,9 @@ import com.wp.designmode.observermode.common.subject.impl.ConcreteSubject;
  */
 public class CommonObserverModeTest {
     public static void main(String[] args) {
+        //被观察的对象
         Subject subject = new ConcreteSubject();
+        //观察者
         Observer observer = new ConcreteObserver();
         subject.attachObserver(observer);
         subject.setSubjectState("aaa");
