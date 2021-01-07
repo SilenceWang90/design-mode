@@ -20,7 +20,7 @@ public class ConcreateObserver implements Observer {
     /**
      *
      * @param o：拉取方式拉取得对象
-     * @param arg：推送方式推送的信息
+     * @param arg：推送方式推送的信息，就是传参
      */
     @Override
     public void update(Observable o, Object arg) {
