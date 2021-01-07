@@ -18,6 +18,7 @@ public class CommonObserverModeTest {
         //观察者
         Observer observer = new ConcreteObserver();
         subject.attachObserver(observer);
+        //被观察对象发布状态更新
         subject.setSubjectState("aaa");
     }
 }
