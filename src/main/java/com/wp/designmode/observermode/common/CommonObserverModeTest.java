@@ -2,6 +2,7 @@ package com.wp.designmode.observermode.common;
 
 import com.wp.designmode.observermode.common.observer.Observer;
 import com.wp.designmode.observermode.common.observer.impl.ConcreteObserver;
+import com.wp.designmode.observermode.common.subject.Subject;
 import com.wp.designmode.observermode.common.subject.impl.ConcreteSubject;
 
 /**
@@ -12,7 +13,7 @@ import com.wp.designmode.observermode.common.subject.impl.ConcreteSubject;
  */
 public class CommonObserverModeTest {
     public static void main(String[] args) {
-        ConcreteSubject subject = new ConcreteSubject();
+        Subject subject = new ConcreteSubject();
         Observer observer = new ConcreteObserver();
         subject.attachObserver(observer);
         subject.setSubjectState("aaa");
