@@ -1,6 +1,7 @@
 package com.wp.designmode.observermode.common.subject;
 
 import com.wp.designmode.observermode.common.observer.Observer;
+import lombok.Data;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -11,7 +12,11 @@ import java.util.List;
  * @Date 2020/1/16 20:03
  * @Created by wangpeng116
  */
+@Data
 public class Subject {
+    //观察者需要观察的内容
+    protected String subjectState;
+
     //用来保存注册的观察者对象
     private List<Observer> observers = new ArrayList<>();
 

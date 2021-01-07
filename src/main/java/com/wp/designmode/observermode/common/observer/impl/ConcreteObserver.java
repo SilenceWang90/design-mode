@@ -2,8 +2,8 @@ package com.wp.designmode.observermode.common.observer.impl;
 
 import com.wp.designmode.observermode.common.observer.Observer;
 import com.wp.designmode.observermode.common.subject.Subject;
-import com.wp.designmode.observermode.common.subject.impl.ConcreteSubject;
 import lombok.Data;
+import lombok.extern.slf4j.Slf4j;
 
 /**
  * @Classname ConcreteObserver
@@ -12,8 +12,8 @@ import lombok.Data;
  * @Created by wangpeng116
  */
 @Data
+@Slf4j
 public class ConcreteObserver implements Observer {
-
     //观察者的状态
     private String observerState;
 
@@ -24,6 +24,7 @@ public class ConcreteObserver implements Observer {
      */
     @Override
     public void update(Subject subject) {
-        this.observerState = ((ConcreteSubject) subject).getSubjectState();
+        this.observerState = subject.getSubjectState();
+        log.info("观察者状态为：{}", observerState);
     }
 }
