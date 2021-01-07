@@ -24,7 +24,7 @@ public class ConcreateObserver implements Observer {
      */
     @Override
     public void update(Observable o, Object arg) {
-        log.info("推送方式，{}收到了消息，目标对象推送的信息为：{}",observerName,arg);
+        log.info("推送方式，{}收到了消息，目标对象推送的信息为：{}",observerName,((ConcreteWeatherSubject)o).getContent());
         log.info("拉取方式，{}收到了消息，主动拉取的内容为：{}",
                 observerName,((ConcreteWeatherSubject)o).getContent());
     }
