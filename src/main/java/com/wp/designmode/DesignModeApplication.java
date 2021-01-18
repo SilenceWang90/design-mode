@@ -9,6 +9,7 @@ public class DesignModeApplication {
         System.out.println("我是future");
         System.out.println("1");
         System.out.println("2");
+        System.out.println("3");
         SpringApplication.run(DesignModeApplication.class, args);
     }
 }
