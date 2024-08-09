@@ -1,6 +1,7 @@
 package com.wp.designmode.observermode.springboot;
 
 import org.springframework.context.ApplicationListener;
+import org.springframework.scheduling.annotation.Async;
 import org.springframework.stereotype.Component;
 
 /**
@@ -10,6 +11,7 @@ import org.springframework.stereotype.Component;
  **/
 @Component
 public class MyEventListenerA implements ApplicationListener<MyEvent> {
+    @Async
     @Override
     public void onApplicationEvent(MyEvent event) {
         System.out.println("我是接口实现方式的监听器：" + event.getName());

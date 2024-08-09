@@ -2,6 +2,8 @@ package com.wp.designmode.observermode.springboot;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.ApplicationEventPublisher;
+import org.springframework.context.annotation.EnableAspectJAutoProxy;
+import org.springframework.scheduling.annotation.EnableAsync;
 import org.springframework.stereotype.Component;
 
 /**
@@ -12,6 +14,7 @@ import org.springframework.stereotype.Component;
  * @date 2024/8/9 09:28
  **/
 @Component
+@EnableAsync
 public class MyEventPublisher {
     // 引入spring事件发布器
     @Autowired
@@ -22,5 +25,10 @@ public class MyEventPublisher {
         MyEvent event = new MyEvent(this, message);
         // 发布事件
         publisher.publishEvent(event);
+
+        /*MyAnotherEvent myAnotherEvent = new MyAnotherEvent("123");
+        myAnotherEvent.setName("hello world");
+        publisher.publishEvent(myAnotherEvent);
+        System.out.println("事件发布完成");*/
     }
 }

@@ -1,6 +1,7 @@
 package com.wp.designmode.observermode.springboot;
 
 import org.springframework.context.event.EventListener;
+import org.springframework.scheduling.annotation.Async;
 import org.springframework.stereotype.Component;
 
 /**
@@ -16,7 +17,14 @@ public class MyEventListenerB {
     }
 
     @EventListener(condition = "#event.name=='你好么'")
+    @Async
     public void say2(MyEvent event) {
         System.out.println("我是注解的形式的监听器2");
+    }
+
+    @EventListener(condition = "#event.name=='hello world'")
+    public void say3(MyAnotherEvent event) {
+        System.out.println("我监听的是MyAnotherEvent");
+        event.read("你好呀");
     }
 }
