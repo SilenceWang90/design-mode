@@ -18,6 +18,8 @@ public class MyEventController {
 
     @RequestMapping("publish/{message}")
     public void publishMyEvent(@PathVariable("message") String message) {
+        System.out.println("发布操作开始");
         myEventPublisher.publishEvent(message);
+        System.out.println("发布操作结束");
     }
 }
